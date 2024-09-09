@@ -10,5 +10,8 @@ variable "subscription_id" {
 
 variable "email_addresses" {
   type    = list(string)
-  default = ["my-mail@domain.com"]
+  default = [
+      "foo@example.com",
+      "bar@example.com",
+    ]
 }

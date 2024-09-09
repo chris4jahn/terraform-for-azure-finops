@@ -5,3 +5,8 @@ module "azurerm_cost_anomaly_alert" {
   email_addresses              = var.email_addresses
 
 }
+
+module "azurerm_budget_alert_for_resource_group" {
+  source = "./modules/azure-budget-alert-for-resource-group"
+  
+}
