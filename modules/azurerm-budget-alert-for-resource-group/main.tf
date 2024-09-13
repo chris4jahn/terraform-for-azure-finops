@@ -47,7 +47,7 @@ resource "azurerm_consumption_budget_resource_group" "Azure_Consumption_Budget_R
     contact_emails = var.azure_budget_alert_contact_emails
 
     contact_groups = [
-      azurerm_monitor_action_group.Azure_Monitor_Action_Gr.id,
+      azurerm_monitor_action_group.Azure_Monitor_Action_Group.id,
     ]
 
     contact_roles = [
